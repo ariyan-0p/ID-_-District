@@ -1,0 +1,144 @@
+/* src/App.css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.App {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.card-container canvas {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  max-width: 100%;
+  height: auto;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.input-form label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: -8px;
+}
+
+.input-form input,
+.input-form button,
+.download-btn {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-form button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.input-form button:disabled {
+  background-color: #a0c3e6;
+  cursor: not-allowed;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.success-message, .error-message {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.success-message { color: #28a745; }
+.error-message { color: #dc3545; }
+
+/* Styles for Photo Upload and Preview */
+.photo-upload-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.photo-preview {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #28a745;
+}
+
+.photo-upload-label {
+  flex-grow: 1;
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px dashed #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.photo-upload-label input[type="file"] {
+  display: none;
+}
+
+/* --- Essential Cropper Styles --- */
+
+/* Styles the image INSIDE the cropper to prevent zooming issues */
+.ReactCrop .ReactCrop__image {
+  max-width: 100%;
+  max-height: 65vh; /* Limits image height to fit in the modal */
+}
+
+/* Styles the "Apply Crop" button inside the modal */
+.crop-button {
+  width: 100%;
+  flex-shrink: 0;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
