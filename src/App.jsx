@@ -79,7 +79,7 @@ function App() {
   const [saveStatus, setSaveStatus] = useState('');
   const [saveMessage, setSaveMessage] = useState('');
 
-  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzmgdjq1DA05yafCcYeP6xYzcKgduuBtJ1Znrmx5T9MUvzmKJhbVN1wYMza7OSVwlRr/exec';
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwQA56bgsTDS7zfbKE8PrXOeqLjPjlhzXmEjI9sxDoJbLyrPB8YiVEabSoRr4GZvHUiFQ/exec';
 
   useEffect(() => {
     const canvas = canvasRef.current;
